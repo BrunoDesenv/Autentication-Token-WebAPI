@@ -17,7 +17,7 @@ namespace WebApisTokenAuth.Controllers
             Accounts userRoles = new Accounts();
             return Ok(userRoles.GetUserRoles());
         }
-
+    
         [HttpGet]
         [Route("AuthorizedUser")]
         [Authorize(Roles ="Admin")]
